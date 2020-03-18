@@ -1,59 +1,62 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Google w/ TailwindCSS</title>
-    <link rel="stylesheet" href="output.css">
-  </head>
-  <body>
-    <header>
-      <div class="flex justify-between text-sm text-gray-700">
-        <div class="flex items-center ml-4">
-          <a href="#" class="block p-3">About</a>
-          <a href="#" class="block p-3">Store</a>
+
+<head>
+  <meta charset="utf-8">
+  <title>Google w/ TailwindCSS</title>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="flex justify-between text-sm text-gray-700">
+      <div class="flex items-center ml-4">
+        <a href="#" class="block p-3">About</a>
+        <a href="#" class="block p-3">Store</a>
+      </div>
+
+      <div class="flex items-center">
+        <a href="#" class="block p-3">Gmail</a>
+        <a href="#" class="block p-3">Images</a>
+        <img src="https://picsum.photos/50" class="rounded-full block py-3 px-4">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="flex justify-center pt-20 mt-20">
+      <div class="">
+        <img class="w-2/3 ml-auto mr-auto mb-6" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+
+        <div class="flex border border-gray-200 rounded-full p-4 shadow text-xl">
+          <div>🕵️‍</div>
+          <input type="text" class="w-full outline-none px-3">
+          <div>🎤</div>
         </div>
 
-        <div class="flex items-center">
-          <a href="#" class="block p-3">Gmail</a>
-          <a href="#" class="block p-3">Images</a>
-          <img src="https://picsum.photos/50" class="rounded-full block py-3 px-4">
+        <div class="mt-8 text-center">
+          <button class="mr-3 bg-gray-200 border border-gray-300 py-3 px-4 rounded hover:bg-gray-400 hover:border-gray-500" type="button" name="button">Google Search</button>
+          <button class="bg-gray-200 border border-gray-300 py-3 px-4 rounded hover:bg-gray-400 hover:border-gray-500" type="button" name="button">I'm Feeling Lucky</button>
         </div>
       </div>
-    </header>
+    </div>
+  </main>
 
-    <main>
-      <div class="flex justify-center pt-20 mt-20">
-        <div class="">
-          <img class="w-2/3 ml-auto mr-auto mb-6" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
-
-          <div class="flex border border-gray-200 rounded-full p-4 shadow text-xl">
-            <div>🕵️‍</div>
-            <input type="text" class="w-full outline-none px-3">
-            <div>🎤</div>
-          </div>
-
-          <div class="mt-8 text-center">
-            <button class="mr-3 bg-gray-200 border border-gray-300 py-3 px-4 rounded hover:bg-gray-400 hover:border-gray-500" type="button" name="button">Google Search</button>
-            <button class="bg-gray-200 border border-gray-300 py-3 px-4 rounded hover:bg-gray-400 hover:border-gray-500" type="button" name="button">I'm Feeling Lucky</button>
-          </div>
-        </div>
+  <footer>
+    <div class="fixed bottom-0 bg-gray-200 border-t w-full flex justify-between text-gray-600 text-sm">
+      <div class="flex">
+        <a href="#" class="block p-3">Advertising</a>
+        <a href="#" class="block p-3">Business</a>
+        <a href="#" class="block p-3">How Search Works</a>
       </div>
-    </main>
 
-    <footer>
-      <div class="fixed bottom-0 bg-gray-200 border-t w-full flex justify-between text-gray-600 text-sm">
-        <div class="flex">
-          <a href="#" class="block p-3">Advertising</a>
-          <a href="#" class="block p-3">Business</a>
-          <a href="#" class="block p-3">How Search Works</a>
-        </div>
-
-        <div class="flex">
-          <a href="#" class="block p-3">Privacy</a>
-          <a href="#" class="block p-3">Terms</a>
-          <a href="#" class="block p-3">Settings</a>
-        </div>
+      <div class="flex">
+        <a href="#" class="block p-3">Privacy</a>
+        <a href="#" class="block p-3">Terms</a>
+        <a href="#" class="block p-3">Settings</a>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
